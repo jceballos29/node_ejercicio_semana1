@@ -104,7 +104,7 @@ describe("3. Probando la implementación de appUser", () => {
     
         const readFile = jest.spyOn(fs, "readFile");
         
-        app.addUser("Academlo");
+        await app.addUser("Academlo");
     
         expect(readFile).toHaveBeenCalledTimes(1);
         
@@ -115,7 +115,7 @@ describe("3. Probando la implementación de appUser", () => {
     
         const readFile = jest.spyOn(fs, "readFile");
         
-        app.addUser("Academlo");
+        await app.addUser("Academlo");
     
         expect(readFile.mock.calls[0][0]).toBe(pathFile);
         
@@ -125,7 +125,7 @@ describe("3. Probando la implementación de appUser", () => {
     
         const writeFile = jest.spyOn(fs, "writeFile");
         
-        app.addUser("Academlo");
+        await app.addUser("Academlo");
     
         expect(writeFile).toHaveBeenCalledTimes(1);
     });
@@ -143,7 +143,7 @@ describe("3. Probando la implementación de appUser", () => {
 
         const writeFile = jest.spyOn(fs, "writeFile");
         
-        app.addUser("Academlo");
+        await app.addUser("Academlo");
     
         expect(writeFile.mock.calls[0][1]).toBe(userlist);
     });

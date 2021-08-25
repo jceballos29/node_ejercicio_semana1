@@ -1,8 +1,6 @@
 //Imports de los módulos
-
 const readFileUsers = () => {
     //Imprimir en consola el arreglo de usuarios
-
 };
 
 const writeHelloWorld = () => {
@@ -10,7 +8,7 @@ const writeHelloWorld = () => {
 
 };
 
-const addUser = (username) => {
+const addUser = async (username) => {
     //Agregar un usuario en la lista users.json
 };
 
